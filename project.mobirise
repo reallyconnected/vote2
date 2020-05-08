@@ -50,9 +50,7 @@
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
     "siteUrl": "undefined",
-    "imageResize": true,
-    "publishType": "local",
-    "publishPath": "@PROJECT_PATH@_published"
+    "imageResize": true
   },
   "pages": {
     "index.html": {
