@@ -49,10 +49,7 @@
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
-    "siteUrl": "undefined",
-    "imageResize": true,
-    "publishType": "local",
-    "publishPath": "@PROJECT_PATH@_published"
+    "siteUrl": "undefined"
   },
   "pages": {
     "index.html": {
