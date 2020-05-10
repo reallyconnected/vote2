@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Welcome to 2020!</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAy_kAyMA13JtTyCJ8Lb8HDLuNkIJQXvHw",
+            authDomain: "vote2-auth.firebaseapp.com",
+            databaseURL: "https://vote2-auth.firebaseio.com",
+            projectId: "vote2-auth",
+            storageBucket: "vote2-auth.appspot.com",
+            messagingSenderId: "874773512918",
+            appId: "1:874773512918:web:7f86dca50239ad3fa2bf77",
+            measurementId: "G-5BW12DBWBW"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+
+</head>
+
+<body>
+    <h1>V.O.T.E.2 Login</h1>
+    <p>Login with Firebase</p>
+    <button class="btn primary" onClick={signInWithGoogle()}> 
+        Sign in with google
+    </button>
+    <button class="btn" onClick={signOut()}>Sign out</button>
+
+    <textarea id="outputs" aria-multiline="true"></textarea>
+    <textarea id="token" aria-multiline="true"></textarea>
+    </textarea>
+    <script src="js/fireAuth.js"></script>
+</body>
+
+</html>
